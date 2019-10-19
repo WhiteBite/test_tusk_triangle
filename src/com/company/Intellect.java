@@ -108,13 +108,13 @@ public class Intellect {
     private String genTriangle() {
         Random r = new Random();
         //      x1  y1                   x2                                           y2                                              x3                                            y3
-        return "0 " + "0 " + Integer.toString(r.nextInt(10)) + " " + Integer.toString(r.nextInt(10)) + " " + Integer.toString(r.nextInt(10)) + " " + Integer.toString(r.nextInt(10));
+        return "0 " + "0 " + Integer.toString(r.nextInt(10)) + " " + Integer.toString(r.nextInt(10)+1) + " " + Integer.toString(r.nextInt(10)) + " " + Integer.toString(r.nextInt(10));
     }
 
     //Генерация равнобедренного треугольника
     private String genTriangle_isosceles() {
         Random r = new Random();
-        int x2 = r.nextInt(20);
+        int x2 = r.nextInt(20)+1;
         double x3 = (double) x2 /2;
         return "0 " + "0 " + Integer.toString(x2) + " 0 " + Double.toString(x3) + " " + Integer.toString(r.nextInt(20));
     }
